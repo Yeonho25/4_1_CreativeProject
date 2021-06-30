@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="553.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchController">
+   <children>
+      <Label layoutX="307.0" layoutY="39.0" text="음식점 검색">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView layoutX="58.0" layoutY="237.0" prefHeight="277.0" prefWidth="650.0" style="-fx-background-color: gray;" />
+      <Label layoutX="80.0" layoutY="91.0" prefHeight="28.0" prefWidth="42.0" text="시/도" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox1" layoutX="122.0" layoutY="91.0" onAction="#comboChanged" prefWidth="150.0" />
+      <Label layoutX="401.0" layoutY="91.0" prefHeight="28.0" prefWidth="69.0" text="시/구/군" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Agency FB" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="163.0" text="음식점명" />
+      <TextField layoutX="148.0" layoutY="158.0" prefHeight="29.0" prefWidth="470.0" />
+      <ComboBox fx:id="comboBox2" layoutX="470.0" layoutY="91.0" prefWidth="150.0" />
+      <Button layoutX="632.0" layoutY="105.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="86.0" text="검색" />
+      <ToggleButton fx:id="sceneChangeBtn" layoutX="625.0" layoutY="25.0" mnemonicParsing="false" onAction="#ChangeSceneFood" text="관광지 검색" />
+   </children>
+</AnchorPane>

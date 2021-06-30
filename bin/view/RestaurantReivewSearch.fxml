@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="762.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RestaurantReviewSearchController">
+	 <children>
+      <Label layoutX="320.0" layoutY="109.0" text="리뷰 목록">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="restaurantId" layoutX="138.0" layoutY="178.0" prefHeight="28.0" prefWidth="444.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="69.0" layoutY="183.0" text="관광지명">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="addrTable" layoutX="64.0" layoutY="237.0" prefHeight="278.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="colWriter" prefWidth="118.39993286132812" text="writer" />
+          <TableColumn fx:id="colGrade" prefWidth="88.80000305175781" text="grade" />
+            <TableColumn fx:id="colContents" prefWidth="309.60003662109375" text="contents" />
+            <TableColumn fx:id="colDate" prefWidth="129.5999755859375" text="date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
+

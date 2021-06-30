@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TourReviewController">
+   <children>
+      <Label layoutX="235.0" layoutY="45.0" text="관광지 리뷰">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tourName" layoutX="155.0" layoutY="103.0" prefHeight="28.0" prefWidth="388.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="txtTourName" layoutX="78.0" layoutY="108.0" text="관광지명">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="contents" layoutX="155.0" layoutY="188.0" prefHeight="196.0" prefWidth="388.0" promptText="리뷰 작성" />
+      <Label fx:id="txtContents" layoutX="78.0" layoutY="188.0" text="리뷰내용">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="tourReviewRegister" layoutX="260.0" layoutY="413.0" mnemonicParsing="false" onAction="#handelAdd" prefHeight="49.0" prefWidth="75.0" text="등록">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtGrade" layoutX="92.0" layoutY="146.0" text="평점">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="grade" layoutX="155.0" layoutY="144.0" prefHeight="22.0" prefWidth="48.0" />
+   </children>
+</AnchorPane>

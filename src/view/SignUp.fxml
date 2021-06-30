@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <Label layoutX="158.0" layoutY="48.0" text="회원가입">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="129.0" text="아이디">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="182.0" text="비밀번호">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="154.0" layoutY="124.0" prefHeight="28.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passWord" layoutX="154.0" layoutY="177.0" prefHeight="28.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="65.0" layoutY="228.0" text="이름">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" layoutX="154.0" layoutY="223.0" prefHeight="28.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="277.0" text="전화번호">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Phone" layoutX="154.0" layoutY="272.0" prefHeight="28.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="331.0" text="주소">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="sceneChangeBtn" layoutX="162.0" layoutY="395.0" mnemonicParsing="false" onAction="#sendData" prefHeight="41.0" prefWidth="88.0" text="등록">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Address" layoutX="154.0" layoutY="326.0" prefHeight="28.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
